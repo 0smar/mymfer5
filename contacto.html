@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mymfer5 - Contacto</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="myNav" class="overlay-menu">
+
+	  <!-- Button to close the overlay navigation -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+	  <!-- Overlay content -->
+	  <div class="overlay-content">
+	    <a href="">Inicio</a>
+		<a href="servicios.html">Servicios</a>
+		<a href="experiencia.html">Experiencia</a>
+		<a href="contacto.html">Contacto</a>
+	  </div>
+
+	</div>
+
+	<div class="nav-menu">
+		<div class="logo">
+			<img src="images/logo.png" alt="Mymfer5 Integración Total">
+		</div>
+		<div class="links">
+			<a href="index.html">Inicio</a>
+			<a href="servicios.html">Servicios</a>
+			<a href="experiencia.html">Nuestra Experiencia</a>
+			<a href="contacto.html">Contacto</a>
+		</div>
+	</div>
+
+	<div class="section-intro">
+		<div class="section-header">
+			Contacto
+		</div>
+		<p>
+			Ponte en contacto con nosotros y potencializa tu negocio.
+			<br><br>
+			Un nuevo nivel de tu negocio está a sólo un click.
+		</p>
+	</div>
+
+	<h2>Déjanos un Mensaje</h2>
+	<div class="contact content">
+		<div class="form">
+			<h1>Mymfer5</h1>
+			<p>Ponte en contacdto con nostros y pronto nos comunicaremos contigo.</p>
+			<form method="POST" action="https://formspree.io/maur@gmail.com" >
+				<input type="text" name="Nombre" placeholder="Nombre" required>
+				<input type="text" name="Empresa" placeholder="Empresa" required>
+				<input type="email" name="Correo Electrónico" placeholder="E-mail" required>
+				<textarea placeholder="Mensaje" name="Mensaje" rows="4" required></textarea> 
+				<input type="submit"  value="Enviar">
+				<input type="hidden" name="_next" value="<%= root_path %>" />
+				<input type="hidden" name="_subject" value="Nuevo Mensaje desde Mymfer5" />
+			</form>
+		</div>
+		<div class="address">
+			<p>
+				Mariano Arista #1060
+				<br>
+				Arboleda de Tequisquiapan
+				<br>
+				San Luis Potosí, SLP.
+				<br>
+				México
+				<br><br>
+				Teléfono: 555 - 555 - 5555
+			</p>
+		</div>
+	</div>
+
+	<img src="images/iconcolor.svg" alt="Mymfer5 Integración Total" class="closing-logo">
+	
+	<div class="footer">
+		<div class="page-links">
+			<a href="index.html">Inicio</a>
+			<a href="servicios.html">Servicios</a>
+			<a href="experiencia.html">Nuestra Experiencia</a>
+			<a href="contacto.html">Contacto</a>
+		</div>
+		<div class="copyright">
+			<a href="index.html">Política de Privacidad</a>
+			<div>Mymfer5 <b>2017</b></div>
+			<a href="http://nuva.rocks"><img src="images/nuva.svg" alt="Desarrollado por Nuva Rocks"></a>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
