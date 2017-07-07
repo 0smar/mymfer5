@@ -1,3 +1,7 @@
+$( document ).ready(function() {
+    $('.client').height($('.client').width());
+});
+
 /* Open when someone clicks on the span element */
 function openNav() {
 	console.log("open");
